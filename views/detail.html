@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="/css/detail.css">
+    <link rel="stylesheet" type="text/css" href="/css/contact.css">
+  </head>
+  <body>
+    <nav>
+      <div class="left-side">
+        <a href="/"><img src="/img/logo.png" id="image" /> </a>
+        <ul>
+          <li>
+            <a href="/" class="active">Home</a>
+          </li>
+          <li>
+            <a href="/project">My Project</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="right-side">
+        <a href="/contact-me"> Contact Me</a>
+      </div>
+    </nav>
+        <div id="project-details-container">
+      <h1>{{.Project.Name}}</h1>
+      <div id="project-data">
+        <img src="/img/2.jpg"/>
+        <div>
+          <div class="author">{{.Project.Author}}</div>
+          <div class="project-data-title">Duration</div>
+          <div class="project-data-item">
+            <i class="fa-solid fa-calendar-days fa-2x"></i>
+            12 Jan 2021 - 11 Feb 2021
+          </div>
+          <div class="project-data-item">
+            <i class="fa-solid fa-clock fa-2x"></i>
+            1 month
+          </div>
+          <div class="project-data-title">Technologies</div>
+          <div class="project-data-item">
+            <span class="project-data-item project-data-technology-1"><i class="fa-brands fa-node fa-2x"></i>Node.JS</span>
+            <span class="project-data-item"><i class="fa-brands fa-js fa-2x"></i>Javascript</span>
+          </div>
+          <div class="project-data-item">
+            <span class="project-data-item project-data-technology-1"><i class="fa-brands fa-react fa-2x"></i>React</span>
+            <span class="project-data-item"><i class="fa-brands fa-golang fa-2x"></i>Golang</span>
+          </div>
+        </div>
+      </div>
+      <p>
+        {{.Project.Description}}
+      </p>
+    </div>
+  </body>
+</html>
